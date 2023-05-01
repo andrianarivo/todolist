@@ -1,7 +1,28 @@
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~bootstrap/scss/bootstrap';
+
+*,
+p,
+h5 {
+  margin: 0;
+  padding: 0;
+}
 
 html,
 main,
 body {
   height: 100%;
+}
+
+a {
+  color: $dark;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
 }

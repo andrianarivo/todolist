@@ -7,12 +7,19 @@
   </head>
   <body>
     <main class="d-flex justify-content-center align-items-center">
-      <div class="container card w-50">
+      <div class="card w-25">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item d-flex justify-content-between align-items-baseline">
+            <h5>Today's To Do</h5>
+            <a id="reload-tasks" href="#"><i class="fa-solid fa-rotate"></i></a>
+          </li>
+          <li class="list-group-item">
+            <div class="flex">
+              <input placeholder="Add to your list..." />
+            </div>
+          </li>
         </ul>
+        <div class="card-footer d-flex justify-content-center"><a href="#">Clear all completed</a></div>
       </div>
     </main>
   </body>
