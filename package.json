@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/andrianarivo/webpack-template#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
+    "postcss": "^8.4.23",
+    "postcss-loader": "^7.3.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
@@ -30,6 +33,7 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
   }
 }

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>README Template</b></h3>
+  <h3><b>TO DO List</b></h3>
 
 </div>
 
@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[your_project_name\] ](#-your_project_name-)
+- [📖 TO DO List ](#-to-do-list-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -30,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 TO DO List <a name="about-project"></a>
 
-**[your_project__name]** is a...
+**TO DO List** is a tool that helps to organize your day.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,7 +43,7 @@
   <ul>
     <li><a href="https://webpack.js.org/">Webpack</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
-    <li><a href="https://sass-lang.com/">Sass</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
   </ul>
 </details>
