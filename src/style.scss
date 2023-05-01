@@ -26,3 +26,27 @@ input {
   border: none;
   outline: none;
 }
+
+.list-group {
+  .list-group-item {
+    #add-new-task {
+      font-style: italic;
+    }
+
+    .task-item {
+      &:hover {
+        cursor: pointer;
+      }
+
+      .task-completed {
+        cursor: pointer;
+      }
+    }
+
+    .move-task {
+      &:hover {
+        cursor: move;
+      }
+    }
+  }
+}

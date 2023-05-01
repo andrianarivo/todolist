@@ -1,7 +1,7 @@
 export default class Task {
-  constructor(description, completed = false) {
+  constructor(index = 1, description, completed = false) {
     this.description = description;
     this.completed = completed;
-    this.index = -1;
+    this.index = index;
   }
 }

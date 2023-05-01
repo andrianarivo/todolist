@@ -1,12 +1,12 @@
-import { listContainer, reloadTasksLink } from './modules/DOMLoader';
+import { reloadTasks } from './modules/DOMLoader';
+import listOfTasks from './modules/ListOfTasks';
 import TaskStore from './modules/TaskStore';
 import './style.scss';
 
 const taskStore = new TaskStore();
 
+listOfTasks(taskStore);
 
-listContainer.innerHTML += taskStore.render();
-
-reloadTasksLink.addEventListener('click', () => {
-
+reloadTasks.addEventListener('click', () => {
+  listOfTasks(taskStore);
 });
