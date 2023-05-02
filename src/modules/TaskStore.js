@@ -8,6 +8,7 @@ export default class TaskStore {
   // Show books in DOM
   render() {
     let content = '';
+    this.tasksArray.sort((task1, task2) => task2.id - task1.id);
     this.tasksArray.forEach((task) => {
       content += `
       <li class="list-group-item d-flex justify-content-between align-items-baseline">
