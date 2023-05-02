@@ -45,19 +45,9 @@ const createInputEdit = (target) => {
   return input;
 };
 
-const editTask = (taskStore) => {
-  document.addEventListener('click', (event) => {
-    const { target } = event;
-    if (target.classList.contains('task-item')) {
-      const input = createInputEdit(target);
-      updateTask(target.id, input, taskStore);
-    } else if (target.classList.contains('task-title')) {
-      const parent = target.parentNode.parentNode;
-
-      const input = createInputEdit(parent);
-      updateTask(target.id, input, taskStore);
-    }
-  });
+const editTask = (taskStore, target) => {
+  const input = createInputEdit(target);
+  updateTask(target.id, input, taskStore);
 };
 
 export default editTask;
