@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>README Template</b></h3>
+  <h3><b>TO DO List</b></h3>
 
 </div>
 
@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[your_project_name\] ](#-your_project_name-)
+- [📖 TO DO List ](#-to-do-list-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -30,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 TO DO List <a name="about-project"></a>
 
-**[your_project__name]** is a...
+**TO DO List** is a tool that helps to organize your day.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,7 +43,7 @@
   <ul>
     <li><a href="https://webpack.js.org/">Webpack</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
-    <li><a href="https://sass-lang.com/">Sass</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
   </ul>
 </details>
@@ -52,9 +52,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Add and remove a task**
+- **Check a task to completed**
+- **Data stored to local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://andrianarivo.github.io/todolist/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,9 +127,9 @@ You can deploy this project by pushing to your own `github page`
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Use database**
+- [ ] **Login**
+- [ ] **Backlog of tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +139,7 @@ You can deploy this project by pushing to your own `github page`
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/andrianarivo/todolist/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

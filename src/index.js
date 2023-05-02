@@ -1,13 +1,12 @@
-import _ from 'lodash';
+import { reloadTasks } from './modules/DOMLoader.js';
+import listOfTasks from './modules/ListOfTasks.js';
+import TaskStore from './modules/TaskStore.js';
 import './style.scss';
 
-function component() {
-  const element = document.createElement('div');
+const taskStore = new TaskStore();
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+listOfTasks(taskStore);
 
-  return element;
-}
-
-document.body.appendChild(component());
+reloadTasks.addEventListener('click', () => {
+  listOfTasks(taskStore);
+});

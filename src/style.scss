@@ -1,3 +1,53 @@
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~bootstrap/scss/bootstrap';
+
+*,
+p,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+main,
 body {
-  background-color: cornflowerblue;
+  height: 100%;
+}
+
+a {
+  color: $dark;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.list-group {
+  .list-group-item {
+    #add-new-task {
+      font-style: italic;
+    }
+
+    .task-item {
+      &:hover {
+        cursor: pointer;
+      }
+
+      .task-completed {
+        cursor: pointer;
+      }
+    }
+
+    .move-task {
+      &:hover {
+        cursor: move;
+      }
+    }
+  }
 }
