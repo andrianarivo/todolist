@@ -1,6 +1,12 @@
+import { getTasks, saveTasks } from './Storage.js';
+
 export default class TaskStore {
   constructor() {
-    this.tasksArray = [];
+    this.getData();
+  }
+
+  getData() {
+    this.tasksArray = getTasks();
   }
 
   getNextIndex() {
@@ -9,6 +15,7 @@ export default class TaskStore {
 
   addTask(task) {
     this.tasksArray.push(task);
+    saveTasks(this.tasksArray);
   }
 
   removeTask(index) {
@@ -17,10 +24,12 @@ export default class TaskStore {
     this.tasksArray.forEach((task, idx) => {
       task.index = idx;
     });
+    saveTasks(this.tasksArray);
   }
 
   editTask(index, newDescription) {
     this.tasksArray[index].description = newDescription;
+    saveTasks(this.tasksArray);
   }
 
   // Show books in DOM
