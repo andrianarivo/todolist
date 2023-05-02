@@ -2,13 +2,13 @@ import Task from './Task.js';
 
 export default class TaskStore {
   constructor() {
-    this.tasksArray = [new Task(1, 'Task 1'), new Task(2, 'Task 2', true)];
+    this.tasksArray = [new Task(1, 'Task 1'), new Task(0, 'Task 0'), new Task(2, 'Task 2', true)];
   }
 
   // Show books in DOM
   render() {
     let content = '';
-    this.tasksArray.sort((task1, task2) => task2.id - task1.id);
+    this.tasksArray.sort((task1, task2) => task1.index - task2.index);
     this.tasksArray.forEach((task) => {
       content += `
       <li class="list-group-item d-flex justify-content-between align-items-baseline">
