@@ -20,15 +20,30 @@ export default class TaskStore {
 
   removeTask(index) {
     this.tasksArray = this.tasksArray.filter((task) => Number(task.index) !== Number(index));
-    this.tasksArray.sort((task1, task2) => task1.index - task2.index);
-    this.tasksArray.forEach((task, idx) => {
-      task.index = idx;
-    });
+    this.indexTasks();
     saveTasks(this.tasksArray);
   }
 
   editTask(index, newDescription) {
     this.tasksArray[index].description = newDescription;
+    saveTasks(this.tasksArray);
+  }
+
+  indexTasks() {
+    this.tasksArray.sort((task1, task2) => task1.index - task2.index);
+    this.tasksArray.forEach((task, idx) => {
+      task.index = idx;
+    });
+  }
+
+  toggleTask(index) {
+    this.tasksArray[index].completed = !this.tasksArray[index].completed;
+    saveTasks(this.tasksArray);
+  }
+
+  removeCompleted() {
+    this.tasksArray = this.tasksArray.filter((task) => !task.completed);
+    this.indexTasks();
     saveTasks(this.tasksArray);
   }
 
@@ -48,7 +63,7 @@ export default class TaskStore {
       content += `
       <li class="task-item list-group-item d-flex justify-content-between align-items-baseline" id="${task.index}">
         <div class="d-flex gap-2 align-items-baseline">
-          <input type="checkbox" class="task-completed form-check-input" ${task.completed ? 'checked' : ''}/>
+          <input type="checkbox" id="${task.index}" class="task-completed form-check-input" ${task.completed ? 'checked' : ''}/>
           <p class="task-title ${task.completed ? 'text-decoration-line-through' : ''}">${task.description}</p>
         </div>
         <a class="move-task" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
