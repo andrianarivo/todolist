@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Exercise</title>
+    <title>TO DO List</title>
   <script defer src="main.js"></script></head>
   <body>
-    <h1>Hello webpack!</h1>
+    <main class="d-flex justify-content-center align-items-center">
+      <div class="card w-25">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-baseline">
+            <h5>Today's To Do</h5>
+            <a id="reload-tasks" href="#"><i class="fa-solid fa-rotate"></i></a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-baseline">
+            <input id="add-new-task" placeholder="Add to your list..." />
+            <a id="btn-add-task" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+          </li>
+        </ul>
+        <div class="card-footer d-flex justify-content-center"><a id="clear-all-tasks" href="#">Clear all completed</a></div>
+      </div>
+    </main>
   </body>
 </html>
