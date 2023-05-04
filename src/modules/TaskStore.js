@@ -37,7 +37,7 @@ export default class TaskStore {
   }
 
   toggleTask(index) {
-    this.tasksArray[index].completed = !this.tasksArray[index].completed;
+    this.tasksArray[index - 1].completed = !this.tasksArray[index - 1].completed;
     saveTasks(this.tasksArray);
   }
 
