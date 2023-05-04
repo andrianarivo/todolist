@@ -1,6 +1,8 @@
 import addTask from './modules/addTask.js';
+import completeTask from './modules/completeTask.js';
 import editTask from './modules/editTask.js';
 import listOfTasks from './modules/listOfTasks.js';
+import removeCompleted from './modules/removeCompleted.js';
 import removeTask from './modules/removeTask.js';
 import TaskStore from './modules/TaskStore.js';
 import './style.scss';
@@ -35,5 +37,18 @@ document.addEventListener('click', (event) => {
   // REMOVE TASK
   if (target.classList.contains('delete-task')) {
     removeTask(taskStore, target.id);
+  }
+
+  // REMOVE COMPLETED TASKS
+  if (target.id === 'clear-all-tasks') {
+    removeCompleted(taskStore);
+  }
+});
+
+// COMPLETE TASK
+document.addEventListener('change', (event) => {
+  const { target } = event;
+  if (target.classList.contains('task-completed')) {
+    completeTask(taskStore, target.id);
   }
 });
